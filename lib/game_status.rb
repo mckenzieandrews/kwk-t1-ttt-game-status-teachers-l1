@@ -24,12 +24,12 @@ def won?(board)
     p_1 = board[win_index_1]
     p_2 = board[win_index_2]
     p_3 = board[win_index_3]
-    if p_1 == "X" && p_2 == "X" && p_3 == "X"
-      return win_combination
-      winner = "X"
-    elsif p_1 == "O" && p_2 == "O" && p_3 == "O"
+    if p_1 == "O" && p_2 == "O" && p_3 == "O"
       return win_combination
       winner = "O"
+    elsif p_1 == "X" && p_2 == "X" && p_3 == "X"
+      return win_combination
+      winner = "X"
     else
       win_combination=0
     end
