@@ -39,6 +39,14 @@ def won?(board)
   end
 end
 
+def full?(board)
+  if board.include? " "
+    return false
+  else
+    return true
+  end
+end
+
 def draw?(board)
   if won?(board)
     return false
@@ -65,14 +73,6 @@ def winner(board)
       return "X"
     else
       return "O"
-    end
-  end
-
-  def full?(board)
-    if board.include? " "
-      return false
-    else
-      return true
     end
   end
 end
